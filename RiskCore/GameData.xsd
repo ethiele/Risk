@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GameData" targetNamespace="http://tempuri.org/GameData.xsd" xmlns:mstns="http://tempuri.org/GameData.xsd" xmlns="http://tempuri.org/GameData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GameData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="GameData" msprop:Generator_UserDSName="GameData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Territory" msprop:Generator_TableClassName="TerritoryDataTable" msprop:Generator_TableVarName="tableTerritory" msprop:Generator_TablePropName="Territory" msprop:Generator_RowDeletingName="TerritoryRowDeleting" msprop:Generator_UserTableName="Territory" msprop:Generator_RowChangingName="TerritoryRowChanging" msprop:Generator_RowEvHandlerName="TerritoryRowChangeEventHandler" msprop:Generator_RowDeletedName="TerritoryRowDeleted" msprop:Generator_RowEvArgName="TerritoryRowChangeEvent" msprop:Generator_RowChangedName="TerritoryRowChanged" msprop:Generator_RowClassName="TerritoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="PartOf" msprop:Generator_ColumnVarNameInTable="columnPartOf" msprop:Generator_ColumnPropNameInRow="PartOf" msprop:Generator_ColumnPropNameInTable="PartOfColumn" msprop:Generator_UserColumnName="PartOf" type="xs:int" minOccurs="0" />
+              <xs:element name="ControlledBy" msprop:Generator_ColumnVarNameInTable="columnControlledBy" msprop:Generator_ColumnPropNameInRow="ControlledBy" msprop:Generator_ColumnPropNameInTable="ControlledByColumn" msprop:Generator_UserColumnName="ControlledBy" type="xs:int" minOccurs="0" />
+              <xs:element name="UnitCount" msprop:Generator_ColumnVarNameInTable="columnUnitCount" msprop:Generator_ColumnPropNameInRow="UnitCount" msprop:Generator_ColumnPropNameInTable="UnitCountColumn" msprop:Generator_UserColumnName="UnitCount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NextToLookup" msprop:Generator_TableClassName="NextToLookupDataTable" msprop:Generator_TableVarName="tableNextToLookup" msprop:Generator_TablePropName="NextToLookup" msprop:Generator_RowDeletingName="NextToLookupRowDeleting" msprop:Generator_UserTableName="NextToLookup" msprop:Generator_RowChangingName="NextToLookupRowChanging" msprop:Generator_RowEvHandlerName="NextToLookupRowChangeEventHandler" msprop:Generator_RowDeletedName="NextToLookupRowDeleted" msprop:Generator_RowEvArgName="NextToLookupRowChangeEvent" msprop:Generator_RowChangedName="NextToLookupRowChanged" msprop:Generator_RowClassName="NextToLookupRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Territory1" msprop:Generator_ColumnVarNameInTable="columnTerritory1" msprop:Generator_ColumnPropNameInRow="Territory1" msprop:Generator_ColumnPropNameInTable="Territory1Column" msprop:Generator_UserColumnName="Territory1" type="xs:int" minOccurs="0" />
+              <xs:element name="Territory2" msprop:Generator_ColumnVarNameInTable="columnTerritory2" msprop:Generator_ColumnPropNameInRow="Territory2" msprop:Generator_ColumnPropNameInTable="Territory2Column" msprop:Generator_UserColumnName="Territory2" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Continent" msprop:Generator_TableClassName="ContinentDataTable" msprop:Generator_TableVarName="tableContinent" msprop:Generator_TablePropName="Continent" msprop:Generator_RowDeletingName="ContinentRowDeleting" msprop:Generator_UserTableName="Continent" msprop:Generator_RowChangingName="ContinentRowChanging" msprop:Generator_RowEvHandlerName="ContinentRowChangeEventHandler" msprop:Generator_RowDeletedName="ContinentRowDeleted" msprop:Generator_RowEvArgName="ContinentRowChangeEvent" msprop:Generator_RowChangedName="ContinentRowChanged" msprop:Generator_RowClassName="ContinentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Player" msprop:Generator_TableClassName="PlayerDataTable" msprop:Generator_TableVarName="tablePlayer" msprop:Generator_TablePropName="Player" msprop:Generator_RowDeletingName="PlayerRowDeleting" msprop:Generator_UserTableName="Player" msprop:Generator_RowChangingName="PlayerRowChanging" msprop:Generator_RowEvHandlerName="PlayerRowChangeEventHandler" msprop:Generator_RowDeletedName="PlayerRowDeleted" msprop:Generator_RowEvArgName="PlayerRowChangeEvent" msprop:Generator_RowChangedName="PlayerRowChanged" msprop:Generator_RowClassName="PlayerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Territory" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="ContinentKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Continent" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="PlayerKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Player" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
